@@ -1,0 +1,24 @@
+PAGES
+
+#Navbar
+#Header
+#About
+#MyServices
+#Education/Skills
+#Portfolio
+#Blog
+#Contact
+
+COMPONENTS
+
+#Logo
+#Link
+#Button
+#Title (left/center)
+
+
+PLUGINS
+
+#Styled-components 
+#Formik
+#React icons
