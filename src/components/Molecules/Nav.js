@@ -52,6 +52,7 @@ const Link = styled.a`
 
     @media (max-width: 1100px) {
       background-color: ${({ theme }) => theme.mainColor};
+      color: ${({ theme }) => theme.white};
     }
   }
 

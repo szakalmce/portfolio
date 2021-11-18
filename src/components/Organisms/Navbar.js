@@ -24,6 +24,8 @@ const NavbarWrapper = styled.div`
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 10;
+  top: 0;
 `;
 
 const NavbarInner = styled.div`

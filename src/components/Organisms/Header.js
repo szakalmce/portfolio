@@ -25,7 +25,7 @@ const Header = () => {
 };
 
 export const HeaderWrapper = styled.div`
-  top: 100px;
+  margin-top: 100px;
   height: 80vh;
   position: relative;
   background-image: url(${img});
@@ -33,11 +33,19 @@ export const HeaderWrapper = styled.div`
   background-size: cover;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    height: 40vh;
+  }
 `;
 
 export const HeaderInner = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 70% 30%;
+  }
 `;
 
 export const HeaderInfo = styled.div``;
@@ -47,17 +55,32 @@ export const HeaderJobTitle = styled.h3`
   font-weight: 300;
   font-size: 1.75rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 0.2rem;
+    font-size: 1.25rem;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 1rem;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
 `;
 
 export const HeaderSubTitle = styled.p`
   font-weight: 300;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
 `;
 
 export default Header;
