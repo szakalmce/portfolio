@@ -6,6 +6,7 @@ export const defaultTheme = {
   mainColor: "#00AF73",
   white: "#fff",
   black: "#000",
+  bgDark: "#262626",
   fonts: {
     smp: "0.85rem",
   },

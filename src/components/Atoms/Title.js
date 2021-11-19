@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Title = ({ children, className }) => {
   return <TitleWrapper className={className}>{children}</TitleWrapper>;
@@ -23,6 +23,20 @@ export const TitleWrapper = styled.h1`
       width: 40%;
       bottom: 0;
       left: 0;
+    }
+  }
+
+  &.center {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: ${({ theme }) => theme.mainColor};
+      height: 2px;
+      width: 40%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 `;
