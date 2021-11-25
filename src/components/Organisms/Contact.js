@@ -5,7 +5,37 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoIosPin } from "react-icons/io";
 
+import { useFormik } from "formik";
+
+import Form from "../Molecules/Form";
+
 const Contact = () => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+      validate: (values) => {
+        let errors = {};
+
+        if (!values.name) {
+          errors.name = "Required";
+        }
+        if (!values.phone) {
+          errors.phone = "Reu";
+        }
+
+        return errors;
+      },
+    },
+    onSubmit: (values) => {
+      // console.log(JSON.stringify(values, null, 2));
+    },
+  });
+
+  console.log(formik.errors);
   return (
     <Wrapper>
       <div className="container">
@@ -37,24 +67,7 @@ const Contact = () => {
             </Info>
           </ContactInfo>
           <ContactForm>
-            <Form>
-              <InputWrapper>
-                <FormInput name="name" placeholder="Your Name" />
-              </InputWrapper>
-              <InputWrapper>
-                <FormInput name="phone" placeholder="Phone" />
-              </InputWrapper>
-              <InputWrapper>
-                <FormInput name="email" placeholder="Email" />
-              </InputWrapper>
-              <InputWrapper>
-                <FormInput name="subject" placeholder="Subject" />
-              </InputWrapper>
-              <TextAreaWrapper>
-                <FormTextarea name="message" placeholder="Message" />
-              </TextAreaWrapper>
-              <SubmitButton>Send Message</SubmitButton>
-            </Form>
+            <Form />
           </ContactForm>
         </ContactInner>
       </div>
@@ -89,66 +102,6 @@ const ContactInner = styled.div`
 const ContactInfo = styled.div``;
 
 const ContactForm = styled.div``;
-
-const Form = styled.form`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-
-  @media (max-width: 1100px) {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-`;
-
-const InputWrapper = styled.div``;
-
-const FormInput = styled.input`
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-const TextAreaWrapper = styled(InputWrapper)`
-  grid-column: 1/ 3;
-
-  @media (max-width: 1100px) {
-    grid-column: 1;
-  }
-`;
-
-const FormTextarea = styled.textarea`
-  width: 100%;
-  min-height: 200px;
-  padding: 1rem;
-  box-sizing: border-box;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-const SubmitButton = styled.button`
-  width: 70%;
-  border: 1px solid ${({ theme }) => theme.mainColor};
-  background-color: transparent;
-  color: ${({ theme }) => theme.mainColor};
-  padding: 1rem 2rem;
-  cursor: pointer;
-
-  @media (max-width: 1100px) {
-    width: 100%;
-  }
-
-  &:hover {
-    background-color: ${({ theme }) => theme.mainColor};
-    color: ${({ theme }) => theme.white};
-  }
-`;
 
 const SubTitle = styled(Title)`
   display: block;

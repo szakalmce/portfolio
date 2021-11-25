@@ -20,11 +20,15 @@ const LinkUl = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
+  background-color: red;
 
   @media (max-width: 1100px) {
     position: absolute;
-    top: 100%;
+    transform: translateY(100px);
+    top: 0;
     left: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
 
     flex-direction: column;
     width: 100%;
@@ -67,7 +71,6 @@ const Link = styled.a`
 `;
 
 const Nav = ({ toggle, setToggle }) => {
-  console.log(toggle);
   return (
     <LinkWrapper>
       <FaBars onClick={() => setToggle(!toggle)} className="bar-icon" />

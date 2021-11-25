@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <div className="container">
-        <HeaderInner>
+        <HeaderInner data-aos="fade-up">
           <HeaderInfo>
             <HeaderJobTitle>Web Developer</HeaderJobTitle>
             <HeaderTitle>Tomasz Garbarz</HeaderTitle>

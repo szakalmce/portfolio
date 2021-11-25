@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ServicesItem = ({ title, icon, desc }) => {
   return (
-    <ItemWrapper>
+    <ItemWrapper data-aos="fade-up">
       <ItemIcon>{icon}</ItemIcon>
       <ItemTitle>{title}</ItemTitle>
       <ItemP>{desc}</ItemP>

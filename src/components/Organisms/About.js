@@ -9,14 +9,14 @@ const About = () => {
     <AboutWrapper>
       <div className="container">
         <AboutInner>
-          <AboutImageWrapper>
+          <AboutImageWrapper data-aos="fade-up" data-aos-offset="50">
             <AboutImage src={img} alt="Tomasz Garbarz" />
             <AboutImageCaption>
               <h4>Tomasz Garbarz</h4>
               <h6>Frontend Developer</h6>
             </AboutImageCaption>
           </AboutImageWrapper>
-          <AboutContentWrapper>
+          <AboutContentWrapper data-aos="fade-right" data-aos-offset="50">
             <Title className="left">About Us</Title>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic

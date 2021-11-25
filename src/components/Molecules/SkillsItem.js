@@ -5,7 +5,12 @@ const SkillsItem = ({ name, value }) => {
   return (
     <Wrapper>
       <Value>{value}%</Value>
-      <Details>
+      <Details
+        data-aos-offset="-200"
+        data-aos-once="true"
+        once="true"
+        data-aos="fade-right"
+      >
         <h4>{name}</h4>
         <Bar value={value} />
       </Details>

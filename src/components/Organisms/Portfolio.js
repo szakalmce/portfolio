@@ -3,16 +3,27 @@ import styled from "styled-components";
 import Title from "../Atoms/Title";
 import { projects } from "../../Assets/data";
 import PortfolioItem from "../Molecules/PortfolioItem";
+import AOS from "aos";
 
 const Portfolio = () => {
   const [tag, setTag] = useState("all");
   const [filteredImages, setFilteredImages] = useState([]);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     tag === "all"
       ? setFilteredImages(projects)
       : setFilteredImages(projects.filter((item) => item.tag === tag));
   }, [tag]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setActive(true);
+    }, 500);
+    setActive(false);
+  }, [tag]);
+
+  console.log(active);
 
   return (
     <Wrapper>
@@ -47,7 +58,7 @@ const Portfolio = () => {
       <div className="container">
         <ItemsWrapper className="category">
           {filteredImages.map((item) => (
-            <PortfolioItem {...item} />
+            <PortfolioItem active={active} {...item} />
           ))}
         </ItemsWrapper>
       </div>
@@ -62,6 +73,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 2s ease-in-out;
 `;
 
 const ItemsWrapper = styled.div`
