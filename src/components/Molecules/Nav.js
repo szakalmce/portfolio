@@ -20,7 +20,6 @@ const LinkUl = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: red;
 
   @media (max-width: 1100px) {
     position: absolute;
