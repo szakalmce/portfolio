@@ -3,7 +3,7 @@ import Nav from "../Molecules/Nav";
 import styled from "styled-components";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   return (
     <NavbarWrapper>
