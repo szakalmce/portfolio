@@ -7,11 +7,11 @@ Project is: _in progress_
 
 ## Setup
 
-Formik
-AOS
-React Icons
-Styled Components
-Normalize CSS
+* Formik
+* AOS
+* React Icons
+* Styled Components
+* Normalize CSS
 
 ## Screenshots
 ![Example screenshot](https://github.com/szakalmce/portfolio/blob/main/EXAMPLE.PNG)
