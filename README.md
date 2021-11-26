@@ -3,7 +3,7 @@
 Simple Portfolio based on React. Live demo  [_here_](https://tg-porfolio.netlify.app/)
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](https://github.com/szakalmce/portfolio/blob/main/EXAMPLE.PNG)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Available Scripts
