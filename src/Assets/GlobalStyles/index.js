@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     .active {
        @media (max-width: 1100px) {
         
-        transform: translateY(-500%);
+        transform: translateY(-500%) !important;
         transition: all 1s ease-in-out;
        }
     }
