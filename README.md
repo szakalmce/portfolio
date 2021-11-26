@@ -1,6 +1,6 @@
 # Tomasz Garbarz - Portfolio
 
-Simple Portfolio based on React/JS/HTML/CSS. Live demo  [_here_](https://www.example.com)
+Simple Portfolio based on React. Live demo  [_here_](https://tg-porfolio.netlify.app/)
 
 ## Available Scripts
 
