@@ -1,6 +1,6 @@
 # Tomasz Garbarz - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple Portfolio based on React/JS/HTML/CSS. Live demo  [_here_](https://www.example.com)
 
 ## Available Scripts
 
