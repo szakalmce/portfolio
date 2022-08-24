@@ -12,9 +12,9 @@ import {
 
 const Technologies = () => {
   return (
-    <div className="technologies">
+    <div className="technologies section-margin">
       <div className="container">
-        <h1 className="technologies-title">TECHNOLOGIES</h1>
+        <h1 className="title">TECHNOLOGIES</h1>
         <ul className="technologies-list">
           <li className="technologies-list-item">
             <SiHtml5 />

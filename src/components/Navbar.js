@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram,
+  FaRegEnvelope,
+} from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -6,29 +12,29 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar">
           <div className="navbar-logo">
-            <h1 className="title">TOMASZ GARABARZ</h1>
+            <h1 className="navbar-title">TOMASZ GARABARZ</h1>
             <h3 className="subtitle">PORTFOLIO</h3>
           </div>
           <nav className="navbar-nav">
             <ul className="navbar-ul">
               <li className="navbar-li">
                 <a href="#" className="navbar-link">
-                  Link
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="navbar-li">
                 <a href="#" className="navbar-link">
-                  Link
+                  <FaGithub />
                 </a>
               </li>
               <li className="navbar-li">
                 <a href="#" className="navbar-link">
-                  Link
+                  <FaInstagram />
                 </a>
               </li>
               <li className="navbar-li">
                 <a href="#" className="navbar-link">
-                  Link
+                  <FaRegEnvelope />
                 </a>
               </li>
             </ul>

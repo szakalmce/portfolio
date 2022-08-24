@@ -1,8 +1,10 @@
 import About from './components/About';
-import Header from './components/Header';
+import Services from './components/Services';
 import Navbar from './components/Navbar';
 import Technologies from './components/Technologies';
 import './styles/style.css';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 const Root = () => {
   return (
@@ -11,6 +13,9 @@ const Root = () => {
       <div style={{ marginTop: '100px' }}>
         <About />
         <Technologies />
+        <Services />
+        <Projects />
+        <Footer />
       </div>
     </div>
   );
