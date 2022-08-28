@@ -9,7 +9,7 @@ import {
 
 const Services = () => {
   return (
-    <div className="services py-5 bg-gray">
+    <div className="services bg-gray py-5 section-margin">
       <div className="container">
         <h1 className="title">SERVICES</h1>
         <div className="services-grid">

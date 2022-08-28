@@ -10,7 +10,7 @@ const Root = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ marginTop: '100px' }}>
+      <div>
         <About />
         <Technologies />
         <Services />
